@@ -106,10 +106,6 @@ python utils/reverse_search.py
 - `scripts/yolo_detection_graph.py`: Script to create the YOLO extraction graph.
 - `data`: Directory to store image datasets.
 
-# License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 # Conclusion
 
 This example demonstrates the power and flexibility of using Indexify for image object detection:
