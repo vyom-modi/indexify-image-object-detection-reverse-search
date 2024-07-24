@@ -24,7 +24,7 @@ Before starting, ensure you have:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/vyom-modi/image-object-detection-reverse-search.git
+   git clone https://github.com/vyom-modi/indexify-image-object-detection-reverse-search.git
    cd image-object-detection-reverse-search
    ```
    
