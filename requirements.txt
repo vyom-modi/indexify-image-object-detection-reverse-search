@@ -1,0 +1,10 @@
+qdrant_client
+pillow
+numpy
+indexify==0.0.29
+indexify-extractor-sdk==0.0.83
+streamlit
+torch
+torchvision
+torchaudio
+opencv-python-headless

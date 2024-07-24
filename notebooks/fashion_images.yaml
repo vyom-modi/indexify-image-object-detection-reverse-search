@@ -1,0 +1,29 @@
+
+    # fashion_images.yaml
+
+    # Paths to the dataset
+    train: /workspace/image-object-detection-reverse-search/data
+    val: /workspace/image-object-detection-reverse-search/data
+
+    # Number of classes
+    nc: 4  # number of classes
+    names: ["Boys", "Girls", "Men", "Women"]
+
+    # Model architecture (example for YOLOv8)
+    backbone:
+    - [type, model, pretrained, stride]
+    - [Conv, 32, 3, 1]       # Convolutional layer
+    - [Conv, 64, 3, 2]       # Convolutional layer with stride 2
+    - [CSP, 64, 1, 1]        # CSP block
+    - [CSP, 128, 3, 2]       # CSP block with stride 2
+    - [CSP, 256, 3, 2]       # CSP block with stride 2
+    - [CSP, 512, 1, 1]       # CSP block
+
+    head:
+    - [type, model, pretrained, stride]
+    - [CSP, 512, 1, 1]       # CSP block
+    - [SPPF, 512, 1, 1]      # SPPF block
+    - [Conv, 256, 1, 1]      # Convolutional layer
+    - [Conv, 128, 1, 1]      # Convolutional layer
+    - [Detect, 4, 1, 1]      # Detection layer for 4 classes
+    
